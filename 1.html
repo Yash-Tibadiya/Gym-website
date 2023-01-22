@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/1.css">
+<style>
+    /* CSS Reset  */
+    body{
+        font-family: 'Raleway', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/6.jpg') -120px -155px;
+        background-repeat: no-repeat;
+        background-size: 1920px 1080px;
+        color: white;
+    }
+    .left{
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline;
+        /* border: 2px solid red; */
+    }
+    .left img{
+        width: 100px;
+        filter: invert(100% );
+    }
+    .left div{
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        width: 40%;
+        margin: 30px auto;
+        /* border: 2px solid green; */
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 46px;
+        display: inline;
+        /* border: 2px solid yellow; */
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 17px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 20px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: wheat;
+    }
+    .btn{
+        font-family: 'Raleway', sans-serif;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid white;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+    .container{
+        border: 2px solid white;
+        margin: 105px 50px;
+        padding: 25px;
+        width: 35%;
+        border-radius: 20px;
+    }
+    .from-group input{
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        display: block;
+        width: 440px;
+        padding: 5px;
+        border: 2px solid black;
+        margin: 13px auto;
+        font-size: 22px;
+        border-radius: 10px;
+    }
+    .container h1{
+        text-align: center;
+        font-size: 22.5px;
+        margin: 20px auto;
+    }
+    .container button{
+        display: block;
+        width: 86%;
+        height: 45px;
+        margin: 25px auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/1.jpg" alt="">
+            <div>Fitness</div>
+        </div>
+        
+        <!-- middel box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact US</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">
+                Call us now
+            </button>
+            <button class="btn">
+                Email us
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in india now</h1>
+        <form action="noaction.php">
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
